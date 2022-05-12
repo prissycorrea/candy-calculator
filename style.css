@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #FAACA8;
+    background-image: linear-gradient( to top,  rgba(255,105,180,1) 4.1%, rgba(255,174,215,1) 74.3% );
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    text-align: center;
+}
+
+.img__topo {
+    background-image: url('./img/candy.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 25vh;
+}
+
+.calc__container {
+    background-image: radial-gradient( circle 907px at 3.4% 19.8%,  rgba(255,243,122,1) 0%, rgba(255,102,145,1) 97.4% );
+    border-radius: 15px;
+    left: 50%;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn {
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%,  rgba(237,107,154,1) 0%, rgba(216,27,96,1) 100.2% );
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    height: 50px;
+    margin: 3px;
+    width: 50px;
+}
+
+.btn__large--x {
+    width: 110px;
+}
+
+.btn__large--y {
+    height: 110px;
+}
+
+.btn:hover, .btn__large--x:hover, .btn__large--y:hover {
+    background-image: radial-gradient( circle 972.6px at 10% 20%,  rgba(243,0,75,1) 0%, rgba(255,93,75,1) 90% );
+}
+
+#result{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+    width: 215px;
+}
+
+.color__btn {
+    border: 2px solid #38B6FF;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.color__btn i {
+    color: #38B6FF;
+    font-size: 24px;
+}
+
+div span button {
+    margin-right: 10px;
+}
+
+.logotipo__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    justify-content: flex-end;
+    padding-top: 80px;
+}
+
+footer p, footer a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/*----- CLASSES PARA A MUDANÇA DE COR DO TEMA ------*/
+.blue {
+    background-image: radial-gradient( circle 465px at -15.1% -25%,  rgba(17,130,193,1) 0%, rgba(67,166,238,1) 49%, rgba(126,203,244,1) 90.2% );
+}
+
+.blue .img__topo {
+    background-image: url('./img/candy-2.png');
+}
+
+.blue .btn {
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%,  rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+}
+
+.blue .btn:hover {
+    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
+}
+
+.blue .color__btn {
+    border: 2px solid #FF66C4;
+}
+
+.blue .color__btn i {
+    color: #FF66C4;
+}
+
+/*----- RESPONSIVE -----*/
+@media only screen and (max-width: 767px) {
+    html {
+        height: 100vh;
+    }
+    .img__topo {
+        display: none;
+    }
+
+    .logotipo__container {
+        height: 70vh;
+        justify-content: flex-start;
+    }
+
+    .logotipo__container img {
+        width: 60%;
+    }
+
+    footer {
+        display: none;
+    }
+}

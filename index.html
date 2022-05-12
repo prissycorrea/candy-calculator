@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Candy Calculator</title>
+</head>
+<body>
+    <div class="img__topo"></div>
+    <div class="calc__container">
+        <p id="result"></p>
+        <table>
+            <tr>
+                <td><button class="btn" onclick="clean()">C</button></td>
+                <td><button class="btn" onclick="backsp()"><</button></td>
+                <td><button class="btn" onclick="insert('/')">/</button></td>
+                <td><button class="btn" onclick="insert('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="insert('7')">7</button></td>
+                <td><button class="btn" onclick="insert('8')">8</button></td>
+                <td><button class="btn" onclick="insert('9')">9</button></td>
+                <td><button class="btn" onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="insert('4')">4</button></td>
+                <td><button class="btn" onclick="insert('5')">5</button></td>
+                <td><button class="btn" onclick="insert('6')">6</button></td>
+                <td><button class="btn" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="insert('1')">1</button></td>
+                <td><button class="btn" onclick="insert('2')">2</button></td>
+                <td><button class="btn" onclick="insert('3')">3</button></td>
+                <td rowspan="2"><button class="btn btn__large--y" onclick="calc()">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="btn btn__large--x" onclick="insert('0')">0</button></td>
+                <td><button class="btn" onclick="insert('.')">.</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="logotipo__container">
+        <span>
+            <button class="color__btn" onclick="mudaTema()"><i class="fa-solid fa-palette"></i></button>
+        </span>
+        <img class="logo" src="./img/logo-calc-yellow.png">
+    </div>
+    <footer>
+        <p>by <a href="#">Priscilla Correa</a></p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/da1654f2ef.js" crossorigin="anonymous"></script>
+</body>
+</html>
